@@ -28,7 +28,6 @@ var pokemonList = matchlist
 //Check if it's underscore, if not then check for the exact letter
 //If different from the checked letter, then remove
 //Repeat for 10 pass cause why not?
-
 function isTheSame() {
 	for (var i = 0; i < pokemonInput.length; i++) {
 	if (pokemonInput.charAt(i) == "_") {
