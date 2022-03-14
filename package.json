@@ -1,7 +1,7 @@
 {
   "name": "whos-that-pokemon-its-spongebob",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Pokemon name searcher I made after a bot on Discord.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,14 @@
   "dependencies": {
     "prompt-sync": "^4.2.0",
     "require-text": "^0.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaonWry/pokemon-name-searcher-or-smth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaonWry/pokemon-name-searcher-or-smth/issues"
+  },
+  "homepage": "https://github.com/KaonWry/pokemon-name-searcher-or-smth#readme"
 }
