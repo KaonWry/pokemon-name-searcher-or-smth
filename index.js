@@ -42,11 +42,11 @@ for (var i = 0; i < pokemonList.length; i++) {
 	pokemonList[i] = pokemonList[i].charAt(0).toUpperCase() + pokemonList[i].slice(1);
 }
 //Make the right "to be" form because I have nothing to do
-var be = "are"
+var be = "are "
 if (pokemonList.length == 1) {
-	be = "is"
+	be = "is "
 }
 //Joining all array elements into a string
 pokemonList = pokemonList.join(', ');
 //Write all possible pokemons
-console.log("The possible pokemon " + be + pokemonList);
+console.log("The possible Pokemons " + be + pokemonList + ".");
