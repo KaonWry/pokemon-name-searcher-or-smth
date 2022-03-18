@@ -18,6 +18,7 @@ var pokemonList = matchlist
 //Loop for every letter on input
 //Check if it's underscore, if not then check for the exact letter
 //If different from the checked letter, then remove
+//Repeat for 10 pass because why not?
 function isTheSame() {
 	for (var i = 0; i < pokemonInput.length; i++) {
 	if (pokemonInput.charAt(i) == "_") {
@@ -33,8 +34,19 @@ function isTheSame() {
 	}
 	}
 }
-//Repeat for 10 pass because why not?
 for (var i = 0; i < 10; i++) {
 	isTheSame()
 }
-console.log(pokemonList);
+//Uppercase all possible answers
+for (var i = 0; i < pokemonList.length; i++) {
+	pokemonList[i] = pokemonList[i].charAt(0).toUpperCase() + pokemonList[i].slice(1);
+}
+//Make the right "to be" form because I have nothing to do
+var be = "are"
+if (pokemonList.length == 1) {
+	be = "is"
+}
+//Joining all array elements into a string
+pokemonList = pokemonList.join(', ');
+//Write all possible pokemons
+console.log("The possible pokemon " + be + pokemonList);
