@@ -50,3 +50,8 @@ if (pokemonList.length == 1) {
 pokemonList = pokemonList.join(', ');
 //Write all possible pokemons
 console.log("The possible Pokemons " + be + pokemonList + ".");
+//Press any key to exit
+console.log('Press any key to exit');
+process.stdin.setRawMode(true);
+process.stdin.resume();
+process.stdin.on('data', process.exit.bind(process, 0));
