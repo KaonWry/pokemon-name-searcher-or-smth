@@ -42,14 +42,16 @@ for (var i = 0; i < pokemonList.length; i++) {
 	pokemonList[i] = pokemonList[i].charAt(0).toUpperCase() + pokemonList[i].slice(1);
 }
 //Make the right "to be" form because I have nothing to do
+var plural = "s "
 var be = "are "
 if (pokemonList.length == 1) {
+	plural = " "
 	be = "is "
 }
 //Joining all array elements into a string
 pokemonList = pokemonList.join(', ');
 //Write all possible pokemons
-console.log("The possible Pokemons " + be + pokemonList + ".");
+console.log("The possible Pokemon" + plural + be + pokemonList + ".");
 //Press any key to exit
 console.log('Press any key to exit');
 process.stdin.setRawMode(true);
