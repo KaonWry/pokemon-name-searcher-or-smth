@@ -2,7 +2,9 @@
 var requireText = require('require-text');	//Import another file
 var prompt = require('prompt-sync')();		//Prompt input
 //Get Pokemon Name
-var pokemonInput = prompt("Who's that Pokemon? ");
+console.log("Who's that Pokemon?")
+console.log("Use underscores ('_') for empty characters")
+var pokemonInput = prompt();
 pokemonInput = pokemonInput.toLowerCase();
 //Import Pokemon list
 var pokemonList = requireText('./pokemon.txt', require);
