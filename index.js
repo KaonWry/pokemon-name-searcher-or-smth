@@ -18,7 +18,7 @@ var pokemonList = matchlist
 //Loop for every letter on input
 //Check if it's underscore, if not then check for the exact letter
 //If different from the checked letter, then remove
-//Repeat for 10 pass because why not?
+//Repeat for 69 pass because haha 69 funni number?
 function isTheSame() {
 	for (var i = 0; i < pokemonInput.length; i++) {
 	if (pokemonInput.charAt(i) == "_") {
@@ -34,7 +34,7 @@ function isTheSame() {
 	}
 	}
 }
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 69; i++) {
 	isTheSame()
 }
 //Uppercase all possible answers
@@ -52,8 +52,3 @@ if (pokemonList.length == 1) {
 pokemonList = pokemonList.join(', ');
 //Write all possible pokemons
 console.log("The possible Pokemon" + plural + be + pokemonList + ".");
-//Press any key to exit
-console.log('Press any key to exit');
-process.stdin.setRawMode(true);
-process.stdin.resume();
-process.stdin.on('data', process.exit.bind(process, 0));
