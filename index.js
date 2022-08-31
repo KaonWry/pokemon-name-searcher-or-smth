@@ -51,4 +51,4 @@ if (pokemonList.length == 1) {
 //Joining all array elements into a string
 pokemonList = pokemonList.join(', ');
 //Write all possible pokemons
-console.log("The possible Pokemon" + be + pokemonList + ".");
+console.log("The possible Pokemon " + be + pokemonList + ".");
